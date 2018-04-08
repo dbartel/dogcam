@@ -1,0 +1,17 @@
+build
+out
+api/build
+api/out
+domain/build
+domain/out
+infrastructure/build
+infrastructure/out
+picture-fetcher/build
+picture-fetcher/out
+proto/build
+proto/out
+proto/src/main/java
+.gradle
+.idea
+
+

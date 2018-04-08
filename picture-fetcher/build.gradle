@@ -1,0 +1,21 @@
+buildscript {
+    ext.http4k = '3.22.2'
+    ext.config4k = '0.3.3'
+}
+
+apply plugin: 'application'
+
+dependencies {
+    compile project(':infrastructure')
+    compile project(':proto')
+
+
+    // http4k
+    compile group: "org.http4k", name: "http4k-core", version: "{$http4k}"
+
+    // config4k
+    compile group: "io.github.config4k", name: "config4k", version: "${config4k}"
+
+}
+
+mainClassName = "zone.thedaniel.dogcam.picture_fetcher.BootKt"

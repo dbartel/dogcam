@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "zone.thedaniel.dogcam";
+option java_multiple_files = true;
+
+service DogPhotoService {
+    rpc RequestPhoto(PhotoRequest) returns (PhotoResponse);
+}
+
+message PhotoRequest {}
+
+message PhotoResponse {
+    string url = 1;
+}
